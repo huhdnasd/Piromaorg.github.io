@@ -1,0 +1,8 @@
+Contact: https://discord.gg/piroma
+
+Expires: 2028-01-01T00:00:00Z
+
+Preferred-Languages: en
+
+Canonical:
+https://YOUR-DOMAIN/.well-known/security.txt
