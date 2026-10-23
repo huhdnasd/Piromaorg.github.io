@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Site Admin | Piroma</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/admin.js"></script>
+</head>
+<body>
+<main class="admin-shell">
+  <div class="admin-heading">
+    <a class="admin-home" href="index.html">Piroma /</a>
+    <span class="eyebrow">Private area</span>
+    <h1>Site administration</h1>
+    <p>Sign in to update public site information.</p>
+  </div>
+
+  <p id="admin-message" class="admin-message" role="status" aria-live="polite"></p>
+
+  <form id="admin-login" class="admin-panel">
+    <h2>Admin sign in</h2>
+    <label>Email
+      <input id="admin-email" type="email" autocomplete="username" required>
+    </label>
+    <label>Password
+      <input id="admin-password" type="password" autocomplete="current-password" required>
+    </label>
+    <button class="btn primary" type="submit">Sign in</button>
+  </form>
+
+  <form id="admin-editor" class="admin-panel" hidden>
+    <div class="admin-panel-heading">
+      <h2>Public site content</h2>
+      <button id="admin-logout" class="btn secondary" type="button">Sign out</button>
+    </div>
+
+    <fieldset class="admin-fields">
+      <legend>Community</legend>
+      <label>Member count
+        <input id="member-count" type="number" min="0" step="1" required>
+      </label>
+      <label>Community rating (out of 5)
+        <input id="community-rating" type="number" min="0" max="5" step="0.1" required>
+      </label>
+    </fieldset>
+
+    <fieldset class="admin-fields">
+      <legend>Plan prices (Robux)</legend>
+      <label>Free
+        <input id="price-free" type="number" min="0" step="1" required>
+      </label>
+      <label>Premium
+        <input id="price-premium" type="number" min="0" step="1" required>
+      </label>
+      <label>Premium+
+        <input id="price-ultimate" type="number" min="0" step="1" required>
+      </label>
+    </fieldset>
+
+    <fieldset class="admin-fields">
+      <legend>Service status</legend>
+      <label>Bot <select id="status-bot"></select></label>
+      <label>API <select id="status-api"></select></label>
+      <label>Database <select id="status-database"></select></label>
+      <label>Discord <select id="status-discord"></select></label>
+      <label class="incident-field">Incident update
+        <textarea id="incident-description" rows="3" maxlength="500" required></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="admin-fields review-admin-fields">
+      <legend>Community reviews</legend>
+      <div id="admin-reviews"></div>
+      <button id="add-review" class="btn secondary" type="button">Add review</button>
+    </fieldset>
+
+    <button class="btn primary save-admin" type="submit">Save and publish</button>
+  </form>
+</main>
+</body>
+</html>

@@ -736,6 +736,177 @@ ul {
     background: rgba(127, 29, 29, 0.5);
 }
 
+.degraded {
+    background: rgba(146, 64, 14, 0.42);
+}
+
+.maintenance {
+    background: rgba(55, 65, 81, 0.55);
+}
+
+.admin-shell {
+    width: min(900px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 48px 0 80px;
+}
+
+.admin-heading {
+    margin-bottom: 28px;
+}
+
+.admin-heading h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+
+.admin-home {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.admin-panel,
+.admin-review-row {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+    padding: 24px;
+}
+
+.admin-panel {
+    display: grid;
+    gap: 20px;
+}
+
+.admin-panel[hidden] {
+    display: none;
+}
+
+.admin-panel h2 {
+    font-size: 1.25rem;
+}
+
+.admin-panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.admin-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    border: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+}
+
+.admin-fields legend {
+    padding-right: 12px;
+    font-weight: 700;
+}
+
+.admin-panel label,
+.admin-review-row label {
+    display: grid;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.admin-panel input,
+.admin-panel select,
+.admin-panel textarea,
+.admin-review-row input,
+.admin-review-row textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    color: var(--text);
+    background: rgba(9, 17, 27, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.admin-panel textarea,
+.admin-review-row textarea {
+    resize: vertical;
+}
+
+.incident-field,
+.review-text-field {
+    grid-column: 1 / -1;
+}
+
+.admin-review-row {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 16px;
+}
+
+.remove-review {
+    justify-self: start;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.review-card {
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+}
+
+.review-card blockquote {
+    margin: 12px 0;
+    color: var(--muted);
+}
+
+.review-rating {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.admin-message {
+    margin-bottom: 16px;
+}
+
+.error-message {
+    color: #fca5a5;
+}
+
+.save-admin {
+    justify-self: start;
+    border: 0;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+.admin-panel button:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+    .admin-fields,
+    .admin-review-row {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-panel {
+        padding: 18px;
+    }
+}
+
 .faq-container {
     display: grid;
     gap: 16px;

@@ -10,6 +10,7 @@
 content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, automation, and community management.">
 
 <link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/public-content.js"></script>
 </head>
 
 <body>
@@ -57,11 +58,11 @@ content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, a
             <span>uptime</span>
           </div>
           <div>
-            <strong>487+</strong>
+            <strong id="member-count">487+</strong>
             <span>members</span>
           </div>
           <div>
-            <strong>4.6/5</strong>
+            <strong id="community-rating">4.6/5</strong>
             <span>community rating</span>
           </div>
         </div>
@@ -201,6 +202,16 @@ content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, a
     </div>
   </section>
 
+  <section class="content-section" id="community-reviews" hidden>
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Community feedback</span>
+        <h2>What members are saying.</h2>
+      </div>
+      <div class="review-grid" id="review-list"></div>
+    </div>
+  </section>
+
   <section class="showcase">
     <div class="container split-layout">
       <div class="showcase-copy">
@@ -284,7 +295,7 @@ content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, a
         <article class="pricing-card">
           <span class="tag included">Included</span>
           <h3>Free</h3>
-          <div class="price">0 <small>Robux</small></div>
+          <div class="price"><span data-price="free">0</span> <small>Robux</small></div>
           <ul>
             <li>Basic moderation tools</li>
             <li>Ticket support essentials</li>
@@ -296,7 +307,7 @@ content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, a
         <article class="pricing-card featured">
           <span class="tag">Most popular</span>
           <h3>Premium</h3>
-          <div class="price">500 <small>Robux</small></div>
+          <div class="price"><span data-price="premium">500</span> <small>Robux</small></div>
           <ul>
             <li>Everything in Free</li>
             <li>Advanced automation rules</li>
@@ -308,7 +319,7 @@ content="Piroma is an all-in-one Discord bot for moderation, tickets, logging, a
         <article class="pricing-card">
           <span class="tag">Ultimate</span>
           <h3>Premium+</h3>
-          <div class="price">1000 <small>Robux</small></div>
+          <div class="price"><span data-price="ultimate">1000</span> <small>Robux</small></div>
           <ul>
             <li>Everything in Premium</li>
             <li>Extra server management tools</li>
