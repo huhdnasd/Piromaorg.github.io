@@ -1,103 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Piroma Status</title>
-
-<link rel="stylesheet"
-href="css/style.css">
-
-<script defer
-src="js/status.js">
-</script>
-
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/status.js"></script>
 </head>
-
 <body>
 
 <nav class="navbar">
-<div class="logo">Piroma</div>
+  <div class="container nav-inner">
+    <div class="logo-wrap">
+      <div class="logo-mark">P</div>
+      <div class="logo">Piroma</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li><a href="commands.html">Commands</a></li>
+    </ul>
+
+    <a href="#" class="invite-btn">Add Bot</a>
+  </div>
 </nav>
 
-<section class="page-hero">
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Service status</span>
+      <h1>Everything is running as expected.</h1>
+      <p>Current operational status of Piroma services and key systems.</p>
+    </div>
+  </section>
 
-<h1>Status</h1>
+  <section class="content-section">
+    <div class="container">
+      <div class="status-grid">
+        <div class="status-card online">
+          <h2>Bot</h2>
+          <p id="bot-status">Online</p>
+        </div>
 
-<p>
-Current operational status of Piroma services.
-</p>
+        <div class="status-card online">
+          <h2>API</h2>
+          <p id="api-status">Online</p>
+        </div>
 
-</section>
+        <div class="status-card online">
+          <h2>Database</h2>
+          <p id="database-status">Online</p>
+        </div>
 
-<section>
+        <div class="status-card online">
+          <h2>Discord</h2>
+          <p id="discord-status">Online</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="status-grid">
-
-<div class="status-card online">
-
-<h2>Bot</h2>
-
-<p id="bot-status">
-Online
-</p>
-
-</div>
-
-<div class="status-card online">
-
-<h2>API</h2>
-
-<p id="api-status">
-Online
-</p>
-
-</div>
-
-<div class="status-card online">
-
-<h2>Database</h2>
-
-<p id="database-status">
-Online
-</p>
-
-</div>
-
-<div class="status-card online">
-
-<h2>Discord</h2>
-
-<p id="discord-status">
-Online
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Recent Incidents</h2>
-
-<div class="card">
-
-<p>
-No incidents reported.
-</p>
-
-</div>
-
-</section>
+  <section class="content-section">
+    <div class="container">
+      <div class="content-panel">
+        <h2>Recent incidents</h2>
+        <p>No incidents reported at this time.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-<p>© 2026 Piroma</p>
+  <p>© 2026 Piroma</p>
+
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="tos.html">Terms</a>
+    <a href="support.html">Support</a>
+  </div>
 </footer>
 
 </body>
