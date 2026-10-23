@@ -773,12 +773,37 @@ ul {
     text-align: center;
 }
 
+.member-avatar {
+    width: 90px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, rgba(255, 77, 90, 0.2), rgba(251, 191, 36, 0.18));
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
 .member-card img {
     width: 110px;
     height: 110px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 16px;
+}
+
+.pricing-card .btn {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.tag.included {
+    background: rgba(34, 197, 94, 0.12);
+    border-color: rgba(34, 197, 94, 0.2);
+    color: #86efac;
 }
 
 .error-page {
